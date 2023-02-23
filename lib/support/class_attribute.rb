@@ -34,6 +34,6 @@ module Oat
 
     def singleton_class?
       ancestors.first != self
-    end
+    end unless respond_to?(:singleton_class?)
   end
 end
